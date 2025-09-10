@@ -1,0 +1,3 @@
+Python is fun.
+Data Analytics is powerful.
+We love Python.
