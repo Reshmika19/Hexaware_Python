@@ -25,15 +25,15 @@ export default function Login() {
 
       const data = await res.json();
       if (res.ok) {
-        setMessage("✅ Login successful!");
+        setMessage("Login successful!");
         localStorage.setItem("token", data.access_token);
         localStorage.setItem("user", JSON.stringify(data.user));
         navigate("/dashboard");
       } else {
-        setMessage("❌ " + data.msg);
+        setMessage( data.msg);
       }
     } catch (error) {
-      setMessage("❌ Error connecting to server.");
+      setMessage(" Error connecting to server.");
     }
   };
 
@@ -48,7 +48,7 @@ export default function Login() {
             backgroundColor: "#111", 
             maxWidth: "900px", 
             minHeight: "500px",
-            boxShadow: "0 0 20px 5px rgba(153, 41, 234, 0.5)" // soft purple glow
+            boxShadow: "0 0 20px 5px rgba(153, 41, 234, 0.5)" 
           }}
         >
           {/* Left Side - Image */}
@@ -117,3 +117,4 @@ export default function Login() {
     </div>
   );
 }
+
