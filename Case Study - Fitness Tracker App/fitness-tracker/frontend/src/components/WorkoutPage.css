@@ -1,0 +1,68 @@
+/* Theme Colors */
+.text-theme {
+  color: #9929ea !important;
+}
+.bg-dark-theme {
+  background-color: #111 !important;
+}
+
+/* Buttons */
+.btn-theme {
+  background-color: #9929ea;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-theme:hover {
+  background-color: #b24aed;
+}
+.btn-danger-theme {
+  background-color: #ff6384;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-danger-theme:hover {
+  background-color: #ff7a99;
+}
+
+/* Inputs */
+.theme-input {
+  background-color: #222 !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+}
+.theme-input:focus {
+  border-color: #9929ea !important;
+  box-shadow: none !important;
+}
+
+/* Icons */
+.icon-edit {
+  cursor: pointer;
+  color: #36a2eb;
+  margin-right: 10px;
+}
+.icon-delete {
+  cursor: pointer;
+  color: #ff6384;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Alerts */
+.alert-success-theme {
+  background-color: #1d1d1d;
+  border: 1px solid #00ff7f;
+  color: #00ff7f;
+  padding: 10px;
+  border-radius: 6px;
+}
+.alert-danger-theme {
+  background-color: #1d1d1d;
+  border: 1px solid #ff6384;
+  color: #ff6384;
+  padding: 10px;
+  border-radius: 6px;
+}
