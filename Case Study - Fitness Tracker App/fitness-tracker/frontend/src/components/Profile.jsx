@@ -22,7 +22,7 @@ export default function Profile() {
       .then((res) => res.json())
       .then((data) => {
         if (data.msg) {
-          setMessage("❌ " + data.msg);
+          setMessage( data.msg);
         } else {
           setUser(data);
           setFormData(data);
@@ -50,13 +50,13 @@ export default function Profile() {
       const data = await res.json();
       if (res.ok) {
         setUser(data.user);
-        setMessage("✅ Profile updated successfully");
+        setMessage("Profile updated successfully");
         setShowModal(false);
       } else {
-        setMessage("❌ " + data.msg);
+        setMessage(data.msg);
       }
     } catch (error) {
-      setMessage("❌ Error connecting to server.");
+      setMessage(" Error connecting to server.");
     }
   };
 
@@ -71,7 +71,7 @@ export default function Profile() {
 
   return (
     <div style={{ backgroundColor: "black", minHeight: "100vh", padding: "20px" }}>
-      {/* Back to Dashboard Button */}
+     
       <br />
       <button
         className="btn mb-4"
@@ -275,3 +275,4 @@ export default function Profile() {
     </div>
   );
 }
+
