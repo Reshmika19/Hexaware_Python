@@ -26,10 +26,3 @@ Design and implement a fitness tracker application where users can register, log
 - **Authentication**: JWT (JSON Web Tokens)
 
 ---
-
-## Installation & Setup
-
-### Backend
-1. Navigate to the backend folder:
-   ```bash
-   cd backend
