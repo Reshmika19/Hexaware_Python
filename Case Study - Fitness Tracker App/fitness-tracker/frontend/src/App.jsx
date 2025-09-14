@@ -6,7 +6,7 @@ import Workouts from "./components/Workouts";
 import Analytics from "./components/Analytics";
 import Profile from "./components/Profile";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";   // ⬅️ Import Navbar
+import Navbar from "./components/Navbar";   
 import Footer from "./components/Footer"; 
 
 export default function App() {
