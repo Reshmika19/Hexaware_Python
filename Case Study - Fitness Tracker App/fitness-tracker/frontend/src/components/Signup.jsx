@@ -31,13 +31,13 @@ export default function Signup() {
 
       const data = await res.json();
       if (res.ok) {
-        setMessage("✅ Signup successful! Please login.");
+        setMessage("Signup successful! Please login.");
         setFormData({ name: "", email: "", password: "", age: "", weight: "" });
       } else {
-        setMessage("❌ " + data.msg);
+        setMessage( + data.msg);
       }
     } catch (error) {
-      setMessage("❌ Error connecting to server.");
+      setMessage("Error connecting to server.");
     }
   };
 
@@ -133,3 +133,4 @@ export default function Signup() {
     </div>
   );
 }
+
