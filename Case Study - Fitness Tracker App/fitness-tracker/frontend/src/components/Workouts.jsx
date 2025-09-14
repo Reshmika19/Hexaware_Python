@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import "./WorkoutPage.css"; // custom styles
+import "./WorkoutPage.css";
 
 const WorkoutPage = () => {
   const [workouts, setWorkouts] = useState([]);
@@ -138,7 +138,7 @@ const WorkoutPage = () => {
   return (
     <div style={{ backgroundColor: "#000", color: "#fff", minHeight: "100vh" }}>
       <div className="container py-5">
-        {/* 🔙 Back Button */}
+       
         <button
           className="btn btn-theme mb-4"
           onClick={() => navigate("/dashboard")}
@@ -395,3 +395,4 @@ const WorkoutPage = () => {
 };
 
 export default WorkoutPage;
+
