@@ -1,12 +1,35 @@
-# React + Vite
+# Fitness Tracker Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problem Statement
+Design and implement a fitness tracker application where users can register, log workouts, track calories, and visualize their fitness progress over time. The app is built using **React** for the frontend, **Flask** for the backend, and a **MySQL** database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **User Authentication**: Secure registration and login with JWT-based authentication.
+- **Dashboard**: Overview of user fitness data and quick stats.
+- **Workout Management**:
+  - Add, edit, and delete workouts
+  - Track exercise type, duration, calories, and date
+- **Analytics & Visualization**:
+  - View total workouts, calories burned, and average duration
+  - Charts for calories per exercise type and average duration per exercise
+- **Profile Management**: Edit personal details like name, age, weight, and password.
+- **Responsive UI**: User-friendly interface following a dark-themed modern design.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **Frontend**: React, Bootstrap, Recharts, Chart.js, React Icons
+- **Backend**: Flask, Flask-JWT-Extended, Flask-CORS
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Tokens)
+
+---
+
+## Installation & Setup
+
+### Backend
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
